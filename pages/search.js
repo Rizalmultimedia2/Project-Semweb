@@ -37,7 +37,7 @@ function Search({ keyword, data }) {
 
     return (
         <section className="relative">
-            <header className="sticky top-0 py-10 bg-grey-0">
+            <header className="sticky z-10 overflow-hidden top-0 py-10 bg-grey-0">
                 <div className="container mx-auto flex items-center justify-center flex-col">
                     <h1 className="text-3xl font-bold">Koleksi Jurnal dan Skripsi</h1>
                     <form className="flex gap-4 w-full mt-6" onSubmit={handleSearch}>
@@ -85,14 +85,14 @@ function Search({ keyword, data }) {
                         <div className="flex gap-2 items-center">
                             <BiBookContent size={24} className="text-blue-semidark" />
                             <h2 className="font-normal text-lg text-blue-semidark text-center">
-                                Menampilkan semua koleksi
+                                Menampilkan semua koleksi data Crypto
                             </h2>
                         </div>
                     ) : (
                         <div className="flex gap-2 items-center">
                             <BiSearchAlt size={24} className="text-blue-semidark" />
                             <h2 className="font-normal text-lg text-blue-semidark text-center">
-                                Menampilkan hasil pencarian untuk &quot;
+                                Menampilkan hasil pencarian untuk {category} &quot;
                                 <span className="font-semibold">{Router.query.keyword}</span>&quot;
                             </h2>
                         </div>
@@ -109,13 +109,14 @@ function Search({ keyword, data }) {
                 )}
 
                 <section className="card-container grid grid-cols-4 gap-x-3 gap-y-5 mt-6">
-                    {data.map((article, index) => (
+                    {data.map((crypto, index) => (
                         <Card
-                            key={`article-${index}`}
-                            onClick={() => handleClick(article)}
-                            tag={article.kategoris}
-                            author={article.nama_penulis}
-                            title={article.nama}
+                            key={`crypto-${index}`}
+                            onClick={() => handleClick(crypto)}
+                            logo={"/logo/" + crypto.kode_perdagangan + ".png"}
+                            kategori={crypto.kategoris}
+                            tag={crypto.tags}
+                            title={crypto.nama + "\t($" + crypto.kode_perdagangan + ")"}
                         ></Card>
                     ))}
                 </section>
