@@ -14,9 +14,7 @@ function Modal({ handleClose, data }) {
           >
             <div className="flex flex-col px-8 py-6 gap-3">
               <p
-                className={`tag font-semibold text-xs px-2 py-1 rounded-full  text-white w-fit ${
-                  data.kategoris == "Skripsi" ? "bg-blue-cyan" : "bg-green"
-                }`}
+                className={`tag font-semibold text-xs px-2 py-1 rounded-full  text-white w-fit bg-blue-semidark `}
               >
                 {data.kategoris}
               </p>

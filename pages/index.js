@@ -30,9 +30,9 @@ export default function Home({}) {
     <>
       <main className="min-h-screen relative z-20">
         <div className="container mx-auto flex items-center content-center place-content-center justify-center flex-col py-16 h-screen">
-          <BiBitcoin size={60} className="text-blue-semidark" />
+          <BiBitcoin size={65} className="text-blue-semidark rotate-6" />
           <h1 className="text-6xl font-bold mt-6">
-            Koleksi Data Cyptocurrency
+            Cyptocurrency Search
           </h1>
           <p className="text-base text-grey-3 mt-6 max-w-[760px] text-center">
             Temukan informasi dari asset cryptocurrency favoritmu untuk mengetahui fundamental dari asset yang anda koleksi dengan mudah
@@ -43,7 +43,7 @@ export default function Home({}) {
                 type="text"
                 name="search"
                 id="search"
-                className="input mt-6 rounded-full w-[460px]"
+                className="input mt-6 rounded-full w-[460px] border-2 border-grey-2"
                 value={keyword}
                 onChange={handleSearchChange}
                 placeholder="Masukkan kata kunci"
@@ -103,6 +103,8 @@ export default function Home({}) {
       <Image
           src={"/bg.png"}
           layout="fill"
+          objectFit="cover"
+          objectPosition='center'
           ></Image>
     </>
   );

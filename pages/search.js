@@ -3,6 +3,7 @@ const d3 = require("d3-sparql");
 import { useRouter } from "next/router";
 import Card from "../Components/Card";
 import Modal from "../Components/Modal";
+import { BiBitcoin } from "react-icons/bi";
 import Image from "next/image";
 import { BiSearchAlt, BiXCircle, BiBookContent } from "react-icons/bi";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -40,13 +41,17 @@ function Search({ keyword, data }) {
         <section className="relative">
             <header className="sticky z-10 overflow-hidden top-0 py-10 bg-grey-0">
                 <div className="container mx-auto flex items-center justify-center flex-col">
-                    <h1 className="text-3xl font-bold">Koleksi Data Cyptocurrency</h1>
-                    <form className="flex gap-4 w-full mt-6" onSubmit={handleSearch}>
-                        <div className="flex-[1]">
-                            <p className="text-base">Cari berdasarkan</p>
-                            <div className="input overflow-hidden rounded-lg cursor-pointer p-0">
+                    <div className="flex flex-row">
+                    <a href="/"><BiBitcoin size={35} className="text-blue-semidark mr-1" />
+                    </a>
+                    <h1 className="text-3xl font-bold">Cryptocurrency Search</h1>
+                    </div>
+                    <form className="flex gap-4 w-full mt-6 flex-row" onSubmit={handleSearch}>
+                        <div className="flex-[1] ml-5">
+                            <p className="text-base">Cari berdasarkan :</p>
+                            <div className="input rounded-full cursor-pointer p-0">
                                 <select
-                                    className="w-full h-full outline-none border-0 cursor-pointer input"
+                                    className="w-full h-full border-0  cursor-pointer input rounded-full pl-2"
                                     onChange={handleSelectChange}
                                 >
                                     <option value="all">Semua</option>
@@ -59,23 +64,26 @@ function Search({ keyword, data }) {
                                 </select>
                             </div>
                         </div>
-                        <div className="flex-[3] relative">
+                        <div className="flex-[3] relative flex-row">
                             <input
                                 type="text"
                                 name="search"
                                 id="search"
-                                className="input mt-6 rounded-lg w-full"
+                                className="input mt-6 rounded-full w-full"
                                 value={searchKeyword}
                                 placeholder="Masukkan kata kunci"
                                 onChange={handleSearchChange}
                             />
-                            <div
-                                className="absolute bottom-[16px] right-4 cursor-pointer"
+                        </div>
+                        <div
+                                className="mr-5 pt-6 top-4 content-center justify-items-center cursor-pointer"
                                 onClick={handleSearch}
                             >
-                                <AiOutlineSearch size={20} />
+                            <button className="rounded-full bg-blue-semidark border-1 input">
+                            <AiOutlineSearch size={20} className=" text-white"/>
+                            </button>
+                                
                             </div>
-                        </div>
                     </form>
                 </div>
             </header>
@@ -103,7 +111,7 @@ function Search({ keyword, data }) {
                         <BiXCircle size={24} className="text-blue-semidark" />
 
                         <h2 className="font-normal text-lg text-blue-semidark text-center">
-                            Tidak dapat menemukan koleksi jurnal/skripsi untuk &quot;
+                            Tidak dapat menemukan {category} untuk &quot;
                             <span className="font-semibold">{Router.query.keyword}</span>&quot;
                         </h2>
                     </div>
@@ -123,9 +131,9 @@ function Search({ keyword, data }) {
                 </section>
 
             </main>
-            <footer className="w-full py-5 flex justify-center bg-blue-semidark">
+            <footer className="w-full py-8  flex justify-center bg-blue-semidark">
                 <p className=" text-xs py-1 px-4 rounded-full text-white font-semibold tracking-widest">
-                
+                © Cryptocurrency search
                 </p>
             </footer>
 
