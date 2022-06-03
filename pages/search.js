@@ -3,6 +3,7 @@ const d3 = require("d3-sparql");
 import { useRouter } from "next/router";
 import Card from "../Components/Card";
 import Modal from "../Components/Modal";
+import Image from "next/image";
 import { BiSearchAlt, BiXCircle, BiBookContent } from "react-icons/bi";
 import { AiOutlineSearch } from "react-icons/ai";
 import LoadingState from "../Components/LoadingState";
@@ -39,7 +40,7 @@ function Search({ keyword, data }) {
         <section className="relative">
             <header className="sticky z-10 overflow-hidden top-0 py-10 bg-grey-0">
                 <div className="container mx-auto flex items-center justify-center flex-col">
-                    <h1 className="text-3xl font-bold">Koleksi Jurnal dan Skripsi</h1>
+                    <h1 className="text-3xl font-bold">Koleksi Data Cyptocurrency</h1>
                     <form className="flex gap-4 w-full mt-6" onSubmit={handleSearch}>
                         <div className="flex-[1]">
                             <p className="text-base">Cari berdasarkan</p>

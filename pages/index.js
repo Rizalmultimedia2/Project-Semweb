@@ -1,4 +1,4 @@
-import { BiBookReader } from "react-icons/bi";
+import { BiBitcoin } from "react-icons/bi";
 import { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -6,7 +6,6 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 export default function Home({}) {
   const [keyword, setKeyword] = useState("");
-  const [category, setCategory] = useState("all");
   const Router = useRouter();
 
   const handleSearchChange = (e) => {
@@ -16,7 +15,7 @@ export default function Home({}) {
   const handleSearch = (e) => {
     e.preventDefault();
     Router.push({ pathname: "/search", query: { keyword: keyword } });
-  };
+  }; 
 
   const handleSearchCategory = (e) => {
     console.log(e.target.name);
@@ -29,16 +28,14 @@ export default function Home({}) {
 
   return (
     <>
-      <main className="min-h-screen relative">
+      <main className="min-h-screen relative z-20">
         <div className="container mx-auto flex items-center content-center place-content-center justify-center flex-col py-16 h-screen">
-          <BiBookReader size={60} className="text-blue-semidark" />
+          <BiBitcoin size={60} className="text-blue-semidark" />
           <h1 className="text-6xl font-bold mt-6">
-            Koleksi Jurnal dan Skripsi
+            Koleksi Data Cyptocurrency
           </h1>
           <p className="text-base text-grey-3 mt-6 max-w-[760px] text-center">
-            Temukan jurnal dan skripsi yang bisa digunakan sebagai referensi
-            untuk tugas akhir, makalah, maupun karya tulis ilmiah lainnya dengan
-            mudah sekarang
+            Temukan informasi dari asset cryptocurrency favoritmu untuk mengetahui fundamental dari asset yang anda koleksi dengan mudah
           </p>
           <form onSubmit={handleSearch}>
             <div className="flex-[3] relative">
@@ -103,6 +100,10 @@ export default function Home({}) {
           </div>
         </div>
       </main>
+      <Image
+          src={"/bg.png"}
+          layout="fill"
+          ></Image>
     </>
   );
 }

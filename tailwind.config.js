@@ -24,6 +24,9 @@ module.exports = {
                 card: "0px 9px 12px 0px rgba(0, 0, 0, 0.05)",
                 input: "0px 0px 0px 2px rgba(49, 130, 206, 0.5)",
             },
+            backgroundImage: {
+                'hero-pattern': "url('/bg.png')",
+            },
         },
     },
     plugins: [],
