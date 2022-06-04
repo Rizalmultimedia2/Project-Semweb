@@ -20,7 +20,11 @@ function Modal({ handleClose, data }) {
               </p>
               <p className="font-semibold text-lg">{data.judul_koleksi}</p>
               <div className="">
-                <Image src={"/logo/" + data.kode_perdagangan + ".png"} width={100} height={100}></Image>
+                <Image
+                  src={"/logo/" + data.kode_perdagangan + ".png"}
+                  width={100}
+                  height={100}
+                ></Image>
               </div>
               <div className="grid grid-cols-3 gap-y-2 my-4">
                 <p className="text-base font-semibold opacity-80 col-span-1">
