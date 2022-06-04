@@ -5,7 +5,7 @@ import Card from "../Components/Card";
 import Modal from "../Components/Modal";
 import { BiBitcoin } from "react-icons/bi";
 import Image from "next/image";
-import { BiSearchAlt, BiXCircle, BiBookContent } from "react-icons/bi";
+import { BiSearch, BiXCircle, BiBookContent } from "react-icons/bi";
 import { AiOutlineSearch } from "react-icons/ai";
 import LoadingState from "../Components/LoadingState";
 
@@ -99,7 +99,7 @@ function Search({ keyword, data }) {
                         </div>
                     ) : (
                         <div className="flex gap-2 items-center">
-                            <BiSearchAlt size={24} className="text-blue-semidark" />
+                            <BiSearch size={24} className="text-blue-semidark" />
                             <h2 className="font-normal text-lg text-blue-semidark text-center">
                                 Menampilkan hasil pencarian untuk {category} &quot;
                                 <span className="font-semibold">{Router.query.keyword}</span>&quot;
