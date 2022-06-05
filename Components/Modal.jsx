@@ -18,7 +18,6 @@ function Modal({ handleClose, data }) {
               >
                 {data.kategoris}
               </p>
-              <p className="font-semibold text-lg">{data.judul_koleksi}</p>
               <div className="">
                 <Image
                   src={"/logo/" + data.kode_perdagangan + ".png"}
