@@ -1,0 +1,705 @@
+@prefix : <http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31> .
+
+<http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31> rdf:type owl:Ontology .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#alamat
+:alamat rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#ekosistem
+:ekosistem rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#jaringan
+:jaringan rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#kategori
+:kategori rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#kode_perdagangan
+:kode_perdagangan rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#nama
+:nama rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#tags
+:tags rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#tahun_dibuat
+:tahun_dibuat rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#website
+:website rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#Kripto
+:Kripto rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#Aave
+:Aave rdf:type owl:NamedIndividual ;
+      :ekosistem "Fantom" ,
+                 "Polygon" ;
+      :jaringan "ERC20" ;
+      :kategori "DAO" ,
+                "DeFi" ;
+      :kode_perdagangan "AAVE" ;
+      :nama "Aave" ;
+      :tags "BNB Chain" ,
+            "Staking" ;
+      :tahun_dibuat 2020 ;
+      :website "https://aave.com/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#BUSD
+:BUSD rdf:type owl:NamedIndividual ;
+      :alamat "0xe9e7cea3dedca5984780bafc599bd69add087d56" ;
+      :ekosistem "Binance" ;
+      :jaringan "BEP20" ;
+      :kategori "Stablecoin" ;
+      :kode_perdagangan "BUSD" ;
+      :nama "Binance USD" ;
+      :tags "USD Stablecoin" ;
+      :tahun_dibuat 2019 ;
+      :website "https://www.binance.com/en/busd" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#CRO
+:CRO rdf:type owl:NamedIndividual ;
+     :ekosistem "Cosmos" ;
+     :jaringan "ERC20" ;
+     :kategori "Cex" ;
+     :kode_perdagangan "CRO" ;
+     :nama "Cronos" ;
+     :tags "Cex" ,
+           "Medium of Exchange" ;
+     :tahun_dibuat 2019 ;
+     :website "https://crypto.com/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#CRV
+:CRV rdf:type owl:NamedIndividual ;
+     :alamat "0xD533a949740bb3306d119CC777fa900bA034cd52" ;
+     :ekosistem "Polygon" ;
+     :jaringan "ERC20" ;
+     :kategori "DeFi" ,
+               "Dex" ;
+     :kode_perdagangan "CRV" ;
+     :nama "Curve DAO Token" ;
+     :tags "DAO" ,
+           "Staking" ;
+     :tahun_dibuat 2020 ;
+     :website "https://curve.fi/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#Crypto21
+:Crypto21 rdf:type owl:NamedIndividual ;
+          :alamat "0xf629cbd94d3791c9250152bd8dfbdf380e2a3b9c" ;
+          :ekosistem "-" ;
+          :jaringan "ERC20" ;
+          :kategori "Gaming" ,
+                    "Metaverse" ,
+                    "NFT" ;
+          :kode_perdagangan "ENJ" ;
+          :nama "Enjin Coin" ;
+          :tags "Gaming" ,
+                "NFT" ;
+          :tahun_dibuat 2017 ;
+          :website "https://enjin.io/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#Crypto22
+:Crypto22 rdf:type owl:NamedIndividual ;
+          :alamat "0x1ce0c2827e2ef14d5c4f29a091d735a204794041" ;
+          :ekosistem "Avalanche" ;
+          :jaringan "BEP20" ;
+          :kategori "DeFi" ,
+                    "Smart Contracts" ;
+          :kode_perdagangan "AVAX" ;
+          :nama "Avalanche" ;
+          :tags "DeFi" ;
+          :tahun_dibuat 2020 ;
+          :website "https://www.avax.network/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#Crypto23
+:Crypto23 rdf:type owl:NamedIndividual ;
+          :alamat "0x514910771af9ca656af840dff83e8264ecf986ca" ;
+          :ekosistem "Etherium" ;
+          :jaringan "ERC20" ;
+          :kategori "DeFi" ;
+          :kode_perdagangan "LINK" ;
+          :nama "Chainlink" ;
+          :tags "DeFi" ,
+                "Oracles" ;
+          :tahun_dibuat 2017 ;
+          :website "https://chain.link/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#EOS
+:EOS rdf:type owl:NamedIndividual ;
+     :ekosistem "EOS" ;
+     :jaringan "BEP20" ;
+     :kategori "Smart Contracts" ;
+     :kode_perdagangan "EOS" ;
+     :nama "EOS" ;
+     :tags "BNB Chain" ,
+           "Medium of Exchange" ;
+     :tahun_dibuat 2017 ;
+     :website "https://eos.io/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#Fantom
+:Fantom rdf:type owl:NamedIndividual ;
+        :alamat "0x4e15361fd6b4bb609fa63c81a2be19d873717870" ;
+        :ekosistem "Fantom" ;
+        :jaringan "ERC20" ;
+        :kategori "DeFi" ;
+        :kode_perdagangan "FTM" ;
+        :nama "Fantom" ;
+        :tags "Platform" ,
+              "Research" ;
+        :tahun_dibuat 2018 ;
+        :website "https://fantom.foundation/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#Gala
+:Gala rdf:type owl:NamedIndividual ;
+      :alamat "0x15D4c048F83bd7e37d49eA4C83a07267Ec4203dA" ;
+      :ekosistem "Polygon" ;
+      :jaringan "ERC20" ;
+      :kategori "Gaming" ,
+                "Metaverse" ,
+                "NFT" ;
+      :kode_perdagangan "GALA" ;
+      :nama "Gala" ;
+      :tags "Gaming" ,
+            "Metaverse" ;
+      :tahun_dibuat 2020 ;
+      :website "https://app.gala.games/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#Grt
+:Grt rdf:type owl:NamedIndividual ;
+     :alamat "0xc944e90c64b2c07662a292be6244bdf05cda44a7" ;
+     :ekosistem "Polygon" ;
+     :jaringan "ERC20" ;
+     :kategori "DeFi" ,
+               "Web3" ;
+     :kode_perdagangan "GRT" ;
+     :nama "The Graph" ;
+     :tags "AI & Big Data" ,
+           "Web3" ;
+     :tahun_dibuat 2020 ;
+     :website "https://thegraph.com/en/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#HNT
+:HNT rdf:type owl:NamedIndividual ;
+     :ekosistem "-" ;
+     :jaringan "Mainnet" ;
+     :kategori "IoT" ,
+               "Web3" ;
+     :kode_perdagangan "HNT" ;
+     :nama "Helium" ;
+     :tags "Mineable" ;
+     :tahun_dibuat 2020 ;
+     :website "https://www.helium.com/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#Hedera
+:Hedera rdf:type owl:NamedIndividual ;
+        :alamat "Mainnet" ;
+        :ekosistem "-" ;
+        :jaringan "Mainnet" ;
+        :kategori "Keuangan" ,
+                  "Web3" ;
+        :kode_perdagangan "HBAR" ;
+        :nama "Hedera" ;
+        :tags "Marketplace" ,
+              "PoS" ;
+        :tahun_dibuat 2019 ;
+        :website "https://hedera.com/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#Hot
+:Hot rdf:type owl:NamedIndividual ;
+     :ekosistem "Hot" ;
+     :jaringan "ERC20" ;
+     :kategori "Platform" ;
+     :kode_perdagangan "HOT" ;
+     :nama "Holo" ;
+     :tags "Filesharing" ,
+           "Storage" ;
+     :tahun_dibuat 2018 ;
+     :website "https://www.holochain.org/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#Huobi
+:Huobi rdf:type owl:NamedIndividual ;
+       :alamat "0x6f259637dcd74c767781e37bc6133cd6a68aa161" ;
+       :ekosistem "-" ;
+       :jaringan "ERC20" ;
+       :kategori "Cex" ;
+       :kode_perdagangan "HT" ;
+       :nama "Huobi Token" ;
+       :tags "Marketplace" ;
+       :tahun_dibuat 2018 ;
+       :website "https://www.huobi.com/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#IOTA
+:IOTA rdf:type owl:NamedIndividual ;
+      :ekosistem "IOTA" ;
+      :jaringan "BEP20" ;
+      :kategori "IoT" ;
+      :kode_perdagangan "MIOTA" ;
+      :nama "IOTA" ;
+      :tags "BNB Chain" ,
+            "Medium of Exchange" ;
+      :tahun_dibuat 2017 ;
+      :website "https://www.iota.org/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#Kucoin
+:Kucoin rdf:type owl:NamedIndividual ;
+        :alamat "Mainnet" ;
+        :ekosistem "Algorand" ;
+        :jaringan "Mainnet" ;
+        :kategori "Cex" ;
+        :kode_perdagangan "KCS" ;
+        :nama "Kucoin Token" ;
+        :tags "Marketplace" ;
+        :tahun_dibuat 2017 ;
+        :website "https://www.kucoin.com/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#Litecoin
+:Litecoin rdf:type owl:NamedIndividual ;
+          :ekosistem "-" ;
+          :jaringan "BEP20" ;
+          :kategori "Keuangan" ;
+          :kode_perdagangan "LTC" ;
+          :nama "Litecoin" ;
+          :tags "Mineable" ,
+                "PoW" ;
+          :tahun_dibuat 2013 ;
+          :website "https://litecoin.org/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#Loopring
+:Loopring rdf:type owl:NamedIndividual ;
+          :ekosistem "Loopring" ;
+          :jaringan "ERC20" ;
+          :kategori "DeFi" ,
+                    "Dex" ;
+          :kode_perdagangan "LRC" ;
+          :nama "Loopring" ;
+          :tags "Dex" ,
+                "Scaling" ;
+          :tahun_dibuat 2017 ;
+          :website "https://loopring.org/#/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#Near
+:Near rdf:type owl:NamedIndividual ;
+      :ekosistem "Injective" ;
+      :jaringan "BEP20" ;
+      :kategori "Keuangan" ,
+                "Platform" ;
+      :kode_perdagangan "NEAR" ;
+      :nama "NEAR Protokol" ;
+      :tags "BNB Chain" ,
+            "Staking" ;
+      :tahun_dibuat 2020 ;
+      :website "https://near.org/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#TRON
+:TRON rdf:type owl:NamedIndividual ;
+      :alamat "0x85eac5ac2f758618dfa09bdbe0cf174e7d574d5b" ;
+      :ekosistem "TRON" ;
+      :jaringan "BEP20" ;
+      :kategori "Ekosistem" ;
+      :kode_perdagangan "TRX" ;
+      :nama "TRON" ;
+      :tags "Media" ,
+            "Payments" ;
+      :tahun_dibuat 2017 ;
+      :website "https://tron.network/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#Waves
+:Waves rdf:type owl:NamedIndividual ;
+       :ekosistem "Waves" ;
+       :jaringan "Mainnet" ;
+       :kategori "Platform" ,
+                 "Smart Contracts" ;
+       :kode_perdagangan "WAVES" ;
+       :nama "Waves" ;
+       :tags "LPoS" ,
+             "Platform" ;
+       :tahun_dibuat 2016 ;
+       :website "https://waves.tech/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#Zill
+:Zill rdf:type owl:NamedIndividual ;
+      :ekosistem "Zilliqa" ;
+      :jaringan "BEP20" ;
+      :kategori "Keuangan" ,
+                "Metaverse" ,
+                "Smart Contracts" ;
+      :kode_perdagangan "ZIL" ;
+      :nama "Zilliqa" ;
+      :tags "BNB Chain" ,
+            "NFT" ,
+            "Platform" ;
+      :tahun_dibuat 2018 ;
+      :website "https://www.zilliqa.com/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#amp
+:amp rdf:type owl:NamedIndividual ;
+     :ekosistem "-" ;
+     :jaringan "ERC20" ;
+     :kategori "Keuangan" ;
+     :kode_perdagangan "AMP" ;
+     :nama "Amp" ;
+     :tags "Keuangan" ,
+           "Payments" ;
+     :tahun_dibuat 2020 ;
+     :website "https://amptoken.org/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#crypto1
+:crypto1 rdf:type owl:NamedIndividual ,
+                  :Kripto ;
+         :ekosistem "Bitcoin" ;
+         :jaringan "BTC" ;
+         :kategori "Ekosistem" ,
+                   "Keuangan" ;
+         :kode_perdagangan "BTC" ;
+         :nama "Bitcoin" ;
+         :tahun_dibuat 2009 ;
+         :website "https://bitcoin.org/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#crypto10
+:crypto10 rdf:type owl:NamedIndividual ;
+          :alamat "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0" ;
+          :ekosistem "Etherium" ;
+          :jaringan "ERC20" ;
+          :kategori "Ekosistem" ,
+                    "Layer 2" ;
+          :kode_perdagangan "MATIC" ;
+          :nama "Polygon" ;
+          :tags "Matic" ,
+                "Platform" ;
+          :tahun_dibuat 2019 ;
+          :website "https://polygon.technology/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#crypto11
+:crypto11 rdf:type owl:NamedIndividual ;
+          :alamat "0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce" ;
+          :ekosistem "-" ;
+          :jaringan "ERC20" ;
+          :kategori "Memecoin" ;
+          :kode_perdagangan "SHIB" ;
+          :nama "Shiba Inu" ;
+          :tags "Memecoin" ,
+                "Shib" ;
+          :tahun_dibuat 2020 ;
+          :website "https://shibatoken.com/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#crypto12
+:crypto12 rdf:type owl:NamedIndividual ;
+          :alamat "secret19ungtd2c7srftqdwgq0dspwvrw63dhu79qxv88" ;
+          :ekosistem "-" ;
+          :jaringan "Secret4" ;
+          :kategori "Privacy" ,
+                    "Private" ;
+          :kode_perdagangan "XMR" ;
+          :nama "Monero" ;
+          :tags "Mineable" ,
+                "Private" ;
+          :tahun_dibuat 2014 ;
+          :website "https://www.getmonero.org/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#crypto13
+:crypto13 rdf:type owl:NamedIndividual ;
+          :alamat "-" ;
+          :ekosistem "Stellar" ;
+          :jaringan "-" ;
+          :kategori "Dex" ,
+                    "Keuangan" ;
+          :kode_perdagangan "XLM" ;
+          :nama "Stellar" ;
+          :tags "Dex" ,
+                "Smart Contracts" ;
+          :tahun_dibuat 2014 ;
+          :website "https://www.stellar.org/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#crypto14
+:crypto14 rdf:type owl:NamedIndividual ;
+          :alamat "0x50d1c9771902476076ecfc8b2a83ad6b9355a4c9" ;
+          :ekosistem "-" ;
+          :jaringan "ERC20" ;
+          :kategori "Cex" ,
+                    "Marketplace" ;
+          :kode_perdagangan "FTT" ;
+          :nama "FTX Token" ;
+          :tags "Centralized Exchange" ,
+                "Marketplace" ;
+          :tahun_dibuat 2019 ;
+          :website "https://ftx.com/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#crypto15
+:crypto15 rdf:type owl:NamedIndividual ;
+          :alamat "0x0f5d2fb29fb7d3cfee444a200298f468908cc942" ;
+          :ekosistem "Etherium" ;
+          :jaringan "ERC20" ;
+          :kategori "Metaverse" ,
+                    "NFT" ,
+                    "VR" ,
+                    "Virtual Reality" ;
+          :kode_perdagangan "MANA" ;
+          :nama "Decentraland" ;
+          :tags "Gaming" ,
+                "Platform" ,
+                "VR" ;
+          :tahun_dibuat 2017 ;
+          :website "https://decentraland.org/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#crypto16
+:crypto16 rdf:type owl:NamedIndividual ;
+          :alamat "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48" ;
+          :ekosistem "Fantom" ;
+          :jaringan "ERC20" ;
+          :kategori "Stablecoin" ;
+          :kode_perdagangan "USDC" ;
+          :nama "USDC Coin" ;
+          :tags "USD Stablecoin" ;
+          :tahun_dibuat 2018 ;
+          :website "https://www.centre.io/usdc" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#crypto17
+:crypto17 rdf:type owl:NamedIndividual ;
+          :alamat "0x16939ef78684453bfdfb47825f8a5f714f12623a" ;
+          :ekosistem "-" ;
+          :jaringan "BEP20" ;
+          :kategori "DeFi" ,
+                    "NFT" ,
+                    "Platform" ,
+                    "PoS" ;
+          :kode_perdagangan "XTZ" ;
+          :nama "Tezos" ;
+          :tags "Platform" ,
+                "PoS" ;
+          :tahun_dibuat 2018 ;
+          :website "https://tezos.com/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#crypto18
+:crypto18 rdf:type owl:NamedIndividual ;
+          :alamat "0x3845badAde8e6dFF049820680d1F14bD3903a5d0" ;
+          :ekosistem "Etherium" ;
+          :jaringan "ERC20" ;
+          :kategori "Gaming" ,
+                    "Metaverse" ,
+                    "NFT" ;
+          :kode_perdagangan "SAND" ;
+          :nama "The Sandbox" ;
+          :tags "Gaming" ,
+                "NFT" ;
+          :tahun_dibuat 2020 ;
+          :website "https://www.sandbox.game/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#crypto19
+:crypto19 rdf:type owl:NamedIndividual ;
+          :alamat "Mainnet" ;
+          :ekosistem "Theta" ;
+          :jaringan "Mainnet" ;
+          :kategori "DeFi" ,
+                    "NFT" ;
+          :kode_perdagangan "THETA" ;
+          :nama "Theta Network" ;
+          :tags "DeFi" ,
+                "Media" ;
+          :tahun_dibuat 2018 ;
+          :website "https://www.thetatoken.org/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#crypto2
+:crypto2 rdf:type owl:NamedIndividual ,
+                  :Kripto ;
+         :alamat "0x2170ed0880ac9a755fd29b2688956bd959f933f8" ;
+         :ekosistem "Etherium" ;
+         :jaringan "BEP20" ;
+         :kategori "Ekosistem" ,
+                   "Keuangan" ,
+                   "Smart Contract" ;
+         :kode_perdagangan "ETH" ;
+         :nama "Etherium" ;
+         :tags "Mineable" ,
+               "PoW" ;
+         :tahun_dibuat 2013 ;
+         :website "https://ethereum.org/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#crypto20
+:crypto20 rdf:type owl:NamedIndividual ;
+          :alamat "0xbb0e17ef65f82ab018d8edd776e8dd940327b28b" ;
+          :ekosistem "-" ;
+          :jaringan "ERC20" ;
+          :kategori "Gaming" ,
+                    "Metaverse" ,
+                    "NFT" ;
+          :kode_perdagangan "AXS" ;
+          :nama "Axie Infinity" ;
+          :tags "Binance Launchpad" ,
+                "Gaming" ,
+                "NFT" ;
+          :tahun_dibuat 2020 ;
+          :website "https://axieinfinity.com/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#crypto3
+:crypto3 rdf:type owl:NamedIndividual ,
+                  :Kripto ;
+         :alamat "0xdac17f958d2ee523a2206206994597c13d831ec7" ;
+         :ekosistem "Tron" ;
+         :jaringan "ERC20" ,
+                   "Tron20" ;
+         :kategori "Stablecoin" ;
+         :kode_perdagangan "USDT" ;
+         :nama "Tether" ;
+         :tags "Payments" ,
+               "Stablecoin" ;
+         :tahun_dibuat 2014 ;
+         :website "https://tether.to" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#crypto4
+:crypto4 rdf:type owl:NamedIndividual ;
+         :alamat "-" ;
+         :ekosistem "Binance" ;
+         :jaringan "Binance" ;
+         :kategori "Cex" ,
+                   "Ekosistem" ,
+                   "Smart Contract" ;
+         :kode_perdagangan "BNB" ;
+         :nama "BNB" ;
+         :tags "Centralized Exchange" ,
+               "Payments" ;
+         :tahun_dibuat 2017 ;
+         :website "https://www.binance.com/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#crypto5
+:crypto5 rdf:type owl:NamedIndividual ;
+         :alamat "0x1d2f0da169ceb9fc7b3144628db156f3f6c60dbe" ;
+         :ekosistem "-" ;
+         :jaringan "BEP20" ;
+         :kategori "Keuangan" ;
+         :kode_perdagangan "XRP" ;
+         :nama "XRP" ;
+         :tags "Medium of Exchange" ,
+               "Riple" ;
+         :tahun_dibuat 2013 ;
+         :website "https://xrpl.org/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#crypto6
+:crypto6 rdf:type owl:NamedIndividual ;
+         :alamat "0x3ee2200efb3400fabb9aacf31297cbdd1d435d47" ;
+         :ekosistem "Cardano" ;
+         :jaringan "BEP20" ;
+         :kategori "Ekosistem" ,
+                   "Keuangan" ,
+                   "Smart Contracts" ;
+         :kode_perdagangan "ADA" ;
+         :nama "Cardano" ;
+         :tags "Mineable" ,
+               "Platform" ;
+         :tahun_dibuat 2017 ;
+         :website "https://cardano.org/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#crypto7
+:crypto7 rdf:type owl:NamedIndividual ;
+         :alamat "-" ;
+         :ekosistem "Solana" ;
+         :jaringan "Solana" ;
+         :kategori "Ekosistem" ;
+         :kode_perdagangan "SOL" ;
+         :nama "Solana" ;
+         :tags "Platform" ,
+               "PoS" ;
+         :tahun_dibuat 2020 ;
+         :website "https://solana.com/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#crypto8
+:crypto8 rdf:type owl:NamedIndividual ;
+         :alamat "0xba2ae424d960c26247dd6c32edc70b295c744c43" ;
+         :ekosistem "-" ;
+         :jaringan "BEP20" ;
+         :kategori "Keuangan" ,
+                   "Memecoin" ;
+         :kode_perdagangan "DOGE" ;
+         :nama "Dogecoin" ;
+         :tags "Memecoin" ,
+               "PoW" ;
+         :tahun_dibuat 2013 ;
+         :website "http://dogecoin.com/" .
+
+
+###  http://www.semanticweb.org/rizalherliansyahh/ontologies/2022/5/untitled-ontology-31#crypto9
+:crypto9 rdf:type owl:NamedIndividual ;
+         :alamat "0x7083609fce4d1d8dc0c979aab8c869ea2c873402" ;
+         :ekosistem "Polkadot" ;
+         :jaringan "BEP20" ;
+         :kategori "Web3" ;
+         :kode_perdagangan "DOT" ;
+         :nama "Polkadot" ;
+         :tags "Polkadot" ,
+               "Substrate" ;
+         :tahun_dibuat 2020 ;
+         :website "https://polkadot.network/" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
